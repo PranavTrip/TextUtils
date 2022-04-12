@@ -1,4 +1,4 @@
-import react from 'react';
+import react from "react";
 export default function Navbar(props) {
   return (
     <>
@@ -30,9 +30,8 @@ export default function Navbar(props) {
                   {props.aboutText}
                 </a>
               </li>
-              
             </ul>
-            <form className="d-flex">
+            {/* <form className="d-flex">
               <input
                 className="form-control me-2"
                 type="search"
@@ -42,7 +41,19 @@ export default function Navbar(props) {
               <button className="btn btn-outline-primary" type="submit">
                 Search
               </button>
-            </form>
+            </form> */}
+            <div className="form-check form-switch">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                
+              />
+              <label className="form-check-label" htmlFor="flexSwitchCheckChecked">
+                Checked switch checkbox input
+              </label>
+            </div>
           </div>
         </div>
       </nav>

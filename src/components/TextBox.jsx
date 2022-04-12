@@ -25,6 +25,7 @@ export default function TextBox(props) {
           placeholder="Enter text here"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          required
         ></textarea>
       </div>
       <div className="my-5 container text-center">
@@ -37,7 +38,7 @@ export default function TextBox(props) {
       <div className="container">
           <p><b>Word Count: </b>{text.length==0?0:text.split(" ").length}</p>
           <p><b>Character Count: </b>{text.length}</p>
-          <p><b>Estimated time to read: </b>{0.008*text.length}</p>
+          <p><b>Estimated time to read: </b>{text.length>0?0.008*text.split(" ").length:0} Minutes</p>
           <p id="textToRead">{text}</p>
       </div>
 
