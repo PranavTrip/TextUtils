@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import About from "./components/About";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import TextBox from "./components/TextBox";
 
@@ -20,6 +20,7 @@ function App() {
     <>
       <Navbar title="Text Utils" aboutText="About" mode={mode} toggleMode={toggleMode}/>
       <TextBox heading="Input Textarea" mode={mode}/>
+      <Footer />
       {/* <About/> */}
     </>
   );
