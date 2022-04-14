@@ -7,7 +7,7 @@ function About() {
     backgroundColor: "black",
     color: "white",
   });
-  const toggleMode = () => {
+  const toggleModes = () => {
     if (style.color === "black") {
       setStyle({
         color: "white",
@@ -66,7 +66,7 @@ function About() {
         </div>
         <button
           className="btn btn-dark my-3 mx-auto text-center"
-          onClick={toggleMode}
+          onClick={toggleModes}
         >
           {btnText}
         </button>

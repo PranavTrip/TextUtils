@@ -1,8 +1,10 @@
 import react from "react";
 export default function Navbar(props) {
+
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             {props.title}
@@ -48,11 +50,9 @@ export default function Navbar(props) {
                 type="checkbox"
                 role="switch"
                 id="flexSwitchCheckChecked"
-                
+                onClick={props.toggleMode}
               />
-              <label className="form-check-label" htmlFor="flexSwitchCheckChecked">
-                Checked switch checkbox input
-              </label>
+              
             </div>
           </div>
         </div>
