@@ -27,7 +27,7 @@ function About() {
   };
   return (
     <>
-      <div className="container my-5" style={style}>
+      <div className="container my-5 p-5" style={style}>
         <h3 className="my-heading">This is the about container</h3>
         <div class="accordion" id="accordionExample">
           <div class="accordion-item" style={style}>
@@ -64,12 +64,7 @@ function About() {
             </div>
           </div>
         </div>
-        <button
-          className="btn btn-dark my-3 mx-auto text-center"
-          onClick={toggleModes}
-        >
-          {btnText}
-        </button>
+        
       </div>
     </>
   );
